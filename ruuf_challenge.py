@@ -1,4 +1,6 @@
 def cuantos_paneles(p_height, p_width, roof_height, roof_width):
+    if p_height <= 0 or p_width <= 0 or roof_height <= 0 or roof_width <= 0:
+        return 0
     if p_height <= roof_height and p_width <= roof_width or p_height <= roof_width and p_width <= roof_height:
         panel_area = p_height * p_width
         roof_area = roof_height * roof_width
